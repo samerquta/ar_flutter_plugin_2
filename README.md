@@ -141,4 +141,4 @@ Therefore, it is necessary to publish your project with github and make the modi
 
 This is a rough sketch of the architecture the plugin implements:
 
-![ar_plugin_architecture](https://github.com/hlefe/ar_flutter_plugin/raw/main/AR_Plugin_Architecture_highlevel.svg)
+![ar_plugin_architecture](https://github.com/hlefe/ar_flutter_plugin_2/raw/main/AR_Plugin_Architecture_highlevel.svg)
