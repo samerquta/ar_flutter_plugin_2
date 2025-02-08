@@ -5,7 +5,7 @@
 
 This version is a direct adaptation of the original ar_flutter_plugin (https://pub.dev/packages/ar_flutter_plugin), maintaining all its powerful features and capabilities.
 This fork was created because the original plugin had not been updated since 2022. <br><br>
-➡ Changes include an update to the AR Core endpoint, a gradle upgrade, and compatibility with FlutterFlow.
+➡ Changes include an update to the AR Core endpoint, a gradle upgrade, and compatibility with FlutterFlow.<br>
 ➡ Migration has been done from sceneform to sceneview_android with the help of Cursor (Ai editor) so maybe some parts are not fully correct (Any contribution is welcome)
 
 <br><br>
