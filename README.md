@@ -4,7 +4,7 @@
 
 
 This version is a direct adaptation of the original ar_flutter_plugin (https://pub.dev/packages/ar_flutter_plugin), 
-migrating the android part from sceneform to sceneview_android and then allowing the usage of animated models.<br>
+migrating the Android component from Sceneform to sceneview_android, enabling the use of animated models.<br>
 This fork was created because the original plugin had not been updated since 2022. <br><br>
 ➡ Changes include an update to the AR Core endpoint, a gradle upgrade, and compatibility with FlutterFlow.<br>
 ➡ Migration has been done from sceneform to sceneview_android with the help of Cursor (Ai editor) so maybe some parts are not fully correct (Any contribution is welcome)
