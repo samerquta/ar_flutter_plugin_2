@@ -57,6 +57,9 @@ import io.github.sceneview.math.Scale
 import io.github.sceneview.math.colorOf
 import io.github.sceneview.loaders.MaterialLoader
 import com.google.ar.core.exceptions.SessionPausedException
+import android.content.ContextWrapper
+import android.view.SurfaceHolder
+import androidx.lifecycle.LifecycleOwner
 
 class ArView(
     context: Context,
@@ -178,7 +181,10 @@ class ArView(
                     planeFindingMode = Config.PlaneFindingMode.DISABLED
                 }
             }
-        )
+        ).apply {
+            setWillNotDraw(false)
+            preserveEGLContextOnPause = true
+        }
         
         rootLayout.addView(sceneView)
 
