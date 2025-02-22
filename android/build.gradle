@@ -29,7 +29,6 @@ apply plugin: 'kotlin-android'
 android {
     compileSdk 34
     namespace 'com.uhg0.ar_flutter_plugin_2'
-    ndkVersion "25.1.8937393"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
