@@ -83,7 +83,6 @@ dependencies {
         exclude group: 'androidx.lifecycle'
     }
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'io.flutter:flutter_embedding_debug:1.0.0-3316dd8728419ad3534e3f6112aa6291f587078a'
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     
@@ -92,5 +91,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-common:2.4.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel:2.4.1'
     
-    
+    configurations {
+        all*.exclude group: 'androidx.lifecycle', module: 'lifecycle-runtime-compose'
+    }
 }

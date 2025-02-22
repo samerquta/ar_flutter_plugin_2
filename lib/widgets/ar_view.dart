@@ -83,8 +83,6 @@ class AndroidARView implements PlatformARView {
       creationParams: creationParams,
       creationParamsCodec: const StandardMessageCodec(),
       onPlatformViewCreated: onPlatformViewCreated,
-      hitTestBehavior: PlatformViewHitTestBehavior.opaque,
-      gestureRecognizers: const <Factory<OneSequenceGestureRecognizer>>{},
     );
   }
 }
