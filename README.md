@@ -36,7 +36,7 @@ Or manually add this to your `pubspec.yaml` file (and run `flutter pub get`):
 
 ```yaml
 dependencies:
-  ar_flutter_plugin_2: ^0.0.1
+  ar_flutter_plugin_2: ^0.0.2
 ```
 
 Or in FlutterFlow : 
@@ -45,7 +45,7 @@ Or in FlutterFlow :
 <td>
 <img src="https://avatars.githubusercontent.com/u/74943865?s=48&amp;v=4" width="30" height="30" style="max-width: 100%; margin-bottom: -9px;"> </img>
 </td>
-<td> Simply add : <br> <b>ar_flutter_plugin_2: ^0.0.1 </b> <br> in pubspecs dependencies of your widget.
+<td> Simply add : <br> <b>ar_flutter_plugin_2: ^0.0.2 </b> <br> in pubspecs dependencies of your widget.
 </td>
 </table>
 

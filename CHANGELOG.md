@@ -1,4 +1,7 @@
 # Changelog
+## 0.0.2
+* Solved the issue "Could not locate SurfaceTextureWrapper.shouldUpdate method" mentioned here : https://github.com/hlefe/ar_flutter_plugin_2/issues/1
+
 ## 0.0.1
 * First release
 * Fork of (Ar_Flutter_Plugin_Flutterflow) but with usage of sceneview_android instead of sceneform
