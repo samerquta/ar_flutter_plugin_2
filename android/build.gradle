@@ -47,55 +47,10 @@ android {
         minSdkVersion 28
         targetSdkVersion 34
     }
-
-    buildFeatures {
-        viewBinding true
-    }
-
-    configurations.all {
-        resolutionStrategy {
-            'androidx.lifecycle:lifecycle-livedata-core:2.6.1'
-            'androidx.lifecycle:lifecycle-runtime:2.6.1'
-            'androidx.lifecycle:lifecycle-common:2.6.1'
-            'androidx.lifecycle:lifecycle-viewmodel:2.6.1'
-            
-            eachDependency { details ->
-                if (details.requested.group == 'androidx.lifecycle') {
-                    if (details.requested.name == 'lifecycle-runtime-compose') {
-                        details.useVersion "2.6.1"
-                    } else {
-                        details.useVersion "2.6.1"
-                    }
-                }
-                if (details.requested.group == 'io.flutter' && details.requested.name.startsWith("flutter_embedding_")) {
-                details.useTarget "io.flutter:flutter_embedding_debug:1.0.0-db49896cf25ceabc44096d5f088d86414e05a7aa"
-            }
-            }
-        }
-    }
-
-    dexOptions {
-        javaMaxHeapSize "4g"
-        preDexLibraries = false
-    }
 }
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation('io.github.sceneview:arsceneview:2.2.1') {
-        exclude group: 'androidx.lifecycle'
-    }
+    implementation 'io.github.sceneview:arsceneview:2.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'io.flutter:flutter_embedding_debug:1.0.0-db49896cf25ceabc44096d5f088d86414e05a7aa'
-    implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    
-    implementation 'androidx.lifecycle:lifecycle-livedata-core:2.6.1'
-    implementation 'androidx.lifecycle:lifecycle-runtime:2.6.1'
-    implementation 'androidx.lifecycle:lifecycle-common:2.6.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.1'
-    
-    configurations {
-        all*.exclude group: 'androidx.lifecycle', module: 'lifecycle-runtime-compose'
-    }
 }
