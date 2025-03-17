@@ -249,7 +249,7 @@ Common interaction methods include:
 
    ```yaml
    dependencies:
-     ar_flutter_plugin_2: ^0.0.2
+     ar_flutter_plugin_2: ^0.0.3
    ```
 
 2. **Add Camera Permissions on iOS**

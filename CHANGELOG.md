@@ -1,4 +1,7 @@
 # Changelog
+## 0.0.3
+* Solved the issue "Failed to RegisterNatives with FlutterJNI" mentioned here : https://github.com/hlefe/ar_flutter_plugin_2/issues/1#issuecomment-2676352087
+
 ## 0.0.2
 * Solved the issue "Could not locate SurfaceTextureWrapper.shouldUpdate method" mentioned here : https://github.com/hlefe/ar_flutter_plugin_2/issues/1
 
